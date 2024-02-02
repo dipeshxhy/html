@@ -1,0 +1,19 @@
+.field-format{
+    background-color: #09065F;
+    text-align: center;
+    color: white;
+}
+.input-format{
+    border:2px solid orange;
+}
+.submit-format{
+   
+    background-color: grey;
+ color: white;
+    border-radius: 20%;
+    padding: 5px;
+    box-shadow: 10px 10px 0 0 grey inset;
+}
+a{
+    color: white;
+}

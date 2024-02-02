@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: aliceblue;
+            text-align: center;
+            margin: 0;
+            font-size: 16px;
+        }
+        h1{
+            color: rgb(26, 17, 17);
+            margin: 1em auto;
+        }
+        fieldset{
+            border: none;
+            padding-bottom: 1.5rem 0;
+        }
+        input{
+            width: 100%;
+            margin:  0 auto;
+            margin-top: 1em ;
+            max-width: 200px;
+            min-width: 300px;
+            border: 1px solid orange;
+            display: block;
+            border-radius: 10px;
+    
+            opacity: 0.8;
+          
+            padding: 2rem;
+        }
+        .input:hover{
+            background-color: gray;
+            color: white;
+        }
+        .inline{
+           margin: 0 2.5rem 1em;
+            background-color: red;
+            color: white;
+            width: 0 2.5em 0 0;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Register Open Snippets</h1>
+    <form action="">
+        <fieldset class="input">
+            <input type="text" name="name" id="" placeholder="Name" required >
+            <input type="email" name="name" id="" placeholder="Email" required>
+            <input type="password" name="name" id="" placeholder="Password" required >
+            <input type="password" name="name" id="" placeholder="confirm password" required>
+        </fieldset>
+        <a href="#">login</a>
+        <button class="inline">Create Account</button>
+    </form>
+</body>
+</html>

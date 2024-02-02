@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-reg2.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <h2>Please fill out this form with the required information:</h2>
+    <form action="">
+        <fieldset>
+            <label for="">Enter Your First Name: <input type="text" name="first-name" required></label>
+
+
+            <label for="">Enter Your Last Name: <input type="text" name="last-name" required></label>
+
+
+            <label for="">Enter Your Email: <input type="email" name="email" required></label>
+
+
+            <label for="">Create a New Password: <input type="password" name="password" pattern="[1-z0-5]{8,}"
+                    required></label>
+
+        </fieldset>
+        <fieldset>
+
+            <label for=""> <input type="radio" name="account-type" class="inline">Personal Account</label>
+
+            <label for=""> <input type="radio" name="account-type" class="inline">Business Account</label>
+
+
+            <label for=""> <input type="checkbox" name="terms-conditions" class="inline">I accpt the <a href="#"> terms
+                    and conditions</a></label>
+
+
+        </fieldset>
+        <fieldset>
+            <label for="">Upload a profile picture: <input type="file" name="file" id=""></label>
+
+
+            <label for=""> <input type="number" name="" id="" min="13" max="120">Input your age(years):</label>
+
+
+            <label for="">How did you hear about us?
+                <select name="referrer" id="">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp Youtube Channel
+                    <option>
+                    <option value="3">freeCodeCamp Forums</option>
+                    <option value="4">other</option>
+                </select>
+            </label>
+            <label for="">Provide a bio: <textarea name="" id="" cols="30" rows="3">I like coding ...</textarea></label>
+
+        </fieldset>
+        <input type="submit" name="" id="" value="Submit" />
+    </form>
+</body>
+
+</html>
