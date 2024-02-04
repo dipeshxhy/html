@@ -4,184 +4,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https:\\fonts.googleapis.com\css?family=Montserrat|Roboto|Noto Sans|Cedarville Cursive
+    ">
+    <title>My First WebPage</title>
+
+    <link rel="stylesheet" href="main.css">
 </head>
 
-
 <body>
-    <!-- header content -->
-    <div class="header">
-        <img src="images/small-profile.jpeg" alt="shark-image" class="small-profile">
-        <h1>Sammy the Shark</h1>
-        <h5>SENIOR SELACHIMORPHA AT DIGITALOCEAN</h5>
-    </div>
+    <header>
+        <h1>My Goals For Year</h1>
 
-    <!-- About me section -->
-    <div class="column-2">
-        <h1>About me</h1>
-        <p>Hi! I'm Sammy the Shark, Senior Selachimorpha at DigitalOcean by day, dabbler in all things dev by night.
-            This site is a demonstration website for the tutorial series"
-            <a href="https://www.digitalocean.com/community/tutorial-series/how-to-build-a-website-with-css"> How To
-                Build
-                a website with CSS
-            </a>,"where we walk you through building and customizing this website from start to finish.
+        <nav>
+            <ul>
+                <li><a href="#html">Learning HTML</a></li>
+                <li><a href="#vacation">Planning & vacation</a>
+                </li>
+                <li><a href="#Contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <hr>
+    <main>
+        <article id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <section>
+                <h3>HTML 5</h3>
+                <p>This is my first web page.</p>
+                <img src="img/html_logo_300x300.png" alt="HTML 5 Logo" title="logo of HTML " width="300" height="300">
+                <figure>
+                    <figcaption>
+                        some html example:
+                        <p>
+                            <code>&lt;h1&gt;Hello world &lt;/&gt;h1</code>
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me tell you how: </p>
+                <ol>
+                    ...I learn more about web dev.
+                    <li>I plan out my schedule.</li>
+                    <li>I use resources from <abbr title="Mozilla Developer Network"> <a
+                                href="https://developer.mozilla.org/en-US/">MDN
+                            </a>
+                        </abbr>.
+                    </li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark> no of hours </mark>I code per day </summary>
+                        <p>I start at 8 am and write 3 hours every morning</p>
+
+                    </details>
+                </aside>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+
+                            </td>
+                            <td>write code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td>
+                                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+
+                            </td>
+                            <td>Eat Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+
+                            </td>
+                            <td>Study for other course</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All Other time</td>
+                            <td>Free Time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="3">That's my daily schedule,5 days of weeks jusr code eat sleep ...and recharge!
+                        </td>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        <hr>
+        <article id=vacation>
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway</em>.</p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+            <h3>Place I'd Like to Visit</h3>
+            <p>I've heard good things about the Caribbean.</p>
+            <figure>
+                <img src="img/caribbean.jpg" alt="Carribean-sea" title="beautiful carribean sea" width="400"
+                    height="225" loading="lazy">
+                <figcaption>Carribean beach gateway
+
+                </figcaption>
+            </figure>
+            <p>I've heard good things about going here:</p>
+            <address>
+                Margaritaville Island Reserve Riviera Cancún<br>
+                Bahia Petempich Puerto Morelos, Mexico<br>
+                Colonia Morelos, México 77580
+            </address>
+            <figure>
+                <img src="img/vacation.jpg" alt="vacation day" titlr="it is joyful day" width="400" height="267"
+                    loading="lazy">
+                <figcaption>Carribean vacation image</figcaption>
+            </figure>
+
+            <!-- TODO: Add more places -->
+            <h3>Places I Want to Avoid</h3>
+            <dl>
+                <dt>North pole</dt>
+                <dd>I hear this is <strong>Cold</strong>!</dd>
+                <dt>South pole</dt>
+                <dd>This is also cold.</dd>
+                <dt>MOuntain tops</dt>
+                <dd>There are also cold</dd>
+            </dl>
+            <hr>
+            <article id="Contact">
+                <h2>Contact Me</h2>
+                <p>I'd really like to hear from you!</p>
+
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Dipesh" autocomplete="on" required
+                autofocus>
+            </p>
+            <p>
+                <label for="LastName">Last Name</label>
+                <input type="text" name="LastName" id="LastName" placeholder="Tharu" autocomplete="on" required
+               >
+            </p>
+            <p>
+                <label for="password">Paassword</label>
+                <input type="password" name="password" id="password" placeholder="Your secret" required
+               >
+            </p>
+            <p>
+                <label for="phone">phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required
+               >
+            </p>
+            <p>
+                <label for="decade">Favourite Decade:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="2020"
+               >
+            </p>
+            <p>
+                <label for="coffee">Favourite Coffee:</label>
+                <select name="coffee" id="coffee" multiple size="5">
+                    <optgroup label="Coffes">
+                    <option value="reguler-coffee">Regular Coffee</option>
+                    <option value="iced-coffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                    <option value="latte" selected>Latte </option>
+                    <option value="cappuccino">Cappuccino </option>
+                    <option value="cortado">Cortado </option>
+                    <option value="americano">Americano </option>
+
+                </optgroup>
+                    <option value="other">Other </option>
+                </select>
+            </p>
+           <!--  <p>
+                <label for="coffee">Favourite Coffee:</label>
+              <input type="text" name="coffee" id="coffee" list="coffee-list">
+              <datalist id="coffee-list">
+                   
+                    <option value="coffee"></option>
+                    
+                
+                
+                    <option value="latte" ></option>
+                    <option value="cappuccino"></option>
+                    <option value="cortado"> </option>
+                    <option value="americano"> </option>
+                
+                    <option value="other"> </option>
+                </datalist>
+                </select>
+            </p>  -->
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What is your favourite food?</legend>
+            <p>
+                <input type="radio" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+                <p>
+                <input type="radio" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+            </p>
+                <p>
+                <input type="radio" name="food" id="other" value="other">
+                <label for="other">Other</label>
+            </p>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+                <input type="checkbox" name="pets" id="dog" value="dog">
+                <label for="d0g">Dog</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="cat" value="cat">
+                <label for="cat">Cat</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="fish" value="fish">
+                <label for="fish">Fish</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                <label for="otherPet">Other</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Send Me a Note</legend>
+            <label for="message">Your Message</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here....."></textarea>
+        </fieldset>
+        <br>
+        <button type="subbmit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+        </form>
+
+            </article>
+        </article>
+    </main>
+
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html " target="_blank">Dipesh</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back To Top</a>
         </p>
 
-        <p>If you're following this tutorial series, you can replace this text with your own "About Me" content.</p>
-     
-    </div>
-    <div class=" column-2  large-profile "></div>
-
-    <!-- Section 3:projects --> 
-     <h2 class="section-heading">Projects</h2>
-
-    <div class="column-4  project-1"></div>
-    <div class="column-4  project-2">
-        <h2 class="project-text">WEB <br>DESIGN</h2>
-    </div> 
-    <div class="column-4  project-3">
-        <h2 class="project-text">CHAT <br>BOTS</h2>
-    </div> 
-    <div class="column-4  project-4">
-        <h2 class="project-text">GAME <br>DESIGN</h2>
-    </div> 
-    <div class="column-4  project-5">
-        <h2 class="project-text">TEXT <br>ANALYSIS</h2>
-    </div> 
-    <div class="column-4  project-6">
-        <h2 class="project-text">JAVA <br>SCRIPT</h2>
-    </div> 
-    <div class="column-4  project-7">
-        <h2 class="project-text">DATA <br>PRIVACY</h2>
-    </div> 
-    <div class="column-4  project-8" ></div>
-    
- 
-<!-- section 4;resume -->
-<div class="section-break"></div>
-<h2 class="section-heading">Experience</h2>
-<div class="column-1">
-    <h2>Employment</h2>
-    <table class="table-style">
-        <tr>
-            <td>Freelance designer</td>
-            <td>Seven Seas</td>
-            <td>2015-present</td>
-        </tr>
-
-        <tr>
-            <td>Associate Sea Creature</td>
-            <td>Small Pond Production</td>
-            <td>2019-2020</td>
-        </tr>
-
-        <tr>
-            <td>Associate Surfer</td>
-            <td>Open Watery Web</td>
-            <td>2018-2019</td>
-        </tr>
-
-        <tr>
-            <td>Open Web Advocate</td>
-            <td>Kiddle Pool Kubernetess</td>
-            <td>2017-2018</td>
-        </tr>
-
-        <tr>
-            <td>Assistant Shark</td>
-            <td>Small Pond Pictures</td>
-            <td>2016-2017</td>
-        </tr>
-    </table>
-
-</div>
-<!-- section5 -->
-<div class="column-5">
-    <h2>Education</h2>
-    <table class="table-style">
-        <tr>
-            <td>Barnacle Bootcamp</td>
-            <td>2020</td>
-        </tr>
-
-        <tr>
-            <td>Seawed University</td>
-            <td>2019-2020</td>
-        </tr>
-
-        <tr>
-            <td>Highwater High School</td>
-            <td>2018-2019</td>
-        </tr>
-
-        <tr>
-            <td>Middle-Sized Pond Middle School</td>
-            <td>2017-2018</td>
-        </tr>
-
-        <tr>
-            <td>Minnow Elementery School</td>
-            <td>2016-2017</td>
-        </tr>
-
-        <tr>
-            <td>Phytoplankton Preschool</td>
-            <td>2015-2016</td>
-        </tr>
-    </table>
-</div>
-
-<div class="column-5">
-    <h2>Skills</h2>
-    <table class="table-style">
-        <tr>
-            <td>Social Media</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>Public Speaking</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>Internet Ethics Ambassador</td>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>Content Production</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>HTML</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>CSS</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-    </table>
-</div>
-<!-- quote box -->
-<div class="section-break"></div>
-<div class="column-6">
-<p class="quote">
-    There are many fish in the sea, but only one Sammy!
-</p>
-</div>
-    
-<!-- footer -->
-<div class="footer">
-    <p class="footer-text-left">
-    <a href="index.html">home</a>
-    <a href="index.html/about">about</a>
-    <a href="index.html/credits">credits</a>
-    </p>
-</div>
+    </footer>
 
 </body>
 

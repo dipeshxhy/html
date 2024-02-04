@@ -1,0 +1,27 @@
+html{
+    font-size: 22px;
+}
+body{
+    background-color: #333;
+    color: whitesmoke;
+    font-family:Montserrat
+, sans-serif;
+}
+a{
+    color: aliceblue;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color: greenyellow;
+}
+table, tr,th, td,caption{
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
